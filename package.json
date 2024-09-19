@@ -1,0 +1,41 @@
+{
+  "name": "tutienapi",
+  "version": "0.1.0",
+  "description": "nothing",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node -r dotenv/config dist/index.js",
+    "dev": "cross-env NODE_ENV=development ts-node --esm -r dotenv/config src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaicolamthimoicoan/tutienapi.git"
+  },
+  "keywords": [
+    "tutienapi"
+  ],
+  "author": "Citnut",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/phaicolamthimoicoan/tutienapi/issues"
+  },
+  "homepage": "https://github.com/phaicolamthimoicoan/tutienapi#readme",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.6.2",
+    "ts-node": "^10.9.2"
+  }
+}
